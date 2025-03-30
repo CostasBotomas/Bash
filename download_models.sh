@@ -1,4 +1,15 @@
 #!/bin/bash
+echo "
+
+__________             .__          .___.__    .___  ________      /\  ____ ____ 
+\______   \__ __  _____|  |__     __| _/|__| __| _/ /   __   \    / / /_   /_   |
+ |    |  _/  |  \/  ___/  |  \   / __ | |  |/ __ |  \____    /   / /   |   ||   |
+ |    |   \  |  /\___ \|   Y  \ / /_/ | |  / /_/ |     /    /   / /    |   ||   |
+ |______  /____//____  >___|  / \____ | |__\____ |    /____/   / /     |___||___|
+        \/           \/     \/       \/         \/             \/                
+        
+"
+sleep 1
 
 # Check if huggingface-cli is installed
 if ! command -v huggingface-cli &> /dev/null; then
@@ -126,4 +137,4 @@ else
 fi
 
 echo "Setup complete! ComfyUI has been installed with all required models."
-echo "You can start ComfyUI by running: cd ComfyUI && python3 main.py --listen --use-sage-attention" 
+cd ComfyUI && python3 main.py --listen --use-sage-attention
